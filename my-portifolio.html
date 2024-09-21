@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Responsiva</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="bg-primary text-white p-3">
+        <div class="container">
+            <h1 class="text-center">Minha Página Web</h1>
+            <nav class="nav justify-content-center">
+                <a class="nav-link text-white" href="#">Início</a>
+                <a class="nav-link text-white" href="#">Sobre</a>
+                <a class="nav-link text-white" href="#">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Corpo da Página com Containers -->
+    <main class="container mt-5">
+        <!-- Seção 1 -->
+        <section class="mb-5">
+            <h2 class="text-primary">Seção 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        </section>
+
+        <!-- Seção 2 -->
+        <section class="mb-5">
+            <h2 class="text-success">Seção 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        </section>
+
+        <!-- Seção 3 -->
+        <section class="mb-5">
+            <h2 class="text-danger">Seção 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center p-3">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Minha Página Web. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script para o Bootstrap e JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script para inserir o ano atual no rodapé -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
